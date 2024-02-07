@@ -1,14 +1,22 @@
 // STEP 1: Declare and initialize a global variable (x = 1)
-
+let x = 1;
+function myFunction() {
+  console.log(`x = ${x}`);
+  let y = 2;
+  myOtherFunction(y);
+}
+const myOtherFunction = (y) => {
+  let z = 25;
+  console.log(y);
+  console.log(`y+z is ${y + z}`);
+};
+myFunction();
 
 // STEP 2: Build a function that accepts no parameters, and also declares and intializes a variable within it (y = 2)
 
-
 // STEP 3: Build another function that also accepts no parameters, and also declares and intializes a variable within it (z = 3)
 
-
 // STEP 4: Analyze the following function that accepts a value, then creates an H2 element, injects it into the DOM, then sets the content to the value of the parameter passed into it when in was called (invoked)
-
 
 /* STEP 5: Punch the following directly into the console:
 output(x)
@@ -36,7 +44,6 @@ Note that variables inside functions are only available inside those functions, 
 */
 
 // Hoisting
-
 
 /* STEP 7: Calling functions within functions
 Bear in mind that you can call a function from within another function at any time, from anywhere in your script */
